@@ -1,53 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDE — Studio for Designed Environments</title>
-  <style>
-    body {
-      margin: 0;
-      background: #0f0f0f;
-      color: #f2f2f2;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SDE — Studio for Designed Environments</title>
+
+<meta name="description" content="SDE is an international design studio based in Berlin. Designing environments for people, culture and change.">
+
+<style>
+
+:root {
+    --bg: #203044;
+    --text: #ffffff;
+    --muted: rgba(255,255,255,0.75);
+    --soft: rgba(255,255,255,0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.content {
+    width: min(950px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: min(520px, 80vw);
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.claim {
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    margin: 0 0 50px 0;
+    font-weight: 400;
+}
+
+.text {
+    max-width: 720px;
+    display: grid;
+    gap: 18px;
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.text p {
+    margin: 0;
+}
+
+.contact {
+    margin-top: 50px;
+    color: var(--soft);
+    font-size: 15px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+@media (max-width: 768px) {
+
     main {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 8vw;
-      box-sizing: border-box;
+        padding: 40px 24px;
     }
-    .content {
-      max-width: 760px;
+
+    .logo {
+        width: 320px;
+        margin-bottom: 50px;
     }
-    h1 {
-      font-size: clamp(42px, 8vw, 96px);
-      line-height: 0.95;
-      margin: 0 0 32px;
-      font-weight: 400;
-      letter-spacing: -0.05em;
+
+    .claim {
+        font-size: 48px;
     }
-    p {
-      font-size: clamp(20px, 2.2vw, 32px);
-      line-height: 1.25;
-      margin: 0 0 48px;
-      color: #d8d8d8;
+
+    .text {
+        font-size: 17px;
     }
-    a {
-      color: #f2f2f2;
-      text-decoration: none;
-      border-bottom: 1px solid #f2f2f2;
-    }
-  </style>
+}
+
+</style>
 </head>
+
 <body>
-  <main>
-    <div class="content">
-      <h1>SDE<br>Studio for Designed Environments</h1>
-      <p>Architecture, spatial design and cultural environments for a world in transformation.</p>
-      <a href="mailto:hello@studio-de.com">hello@studio-de.com</a>
-    </div>
-  </main>
+
+<main>
+
+<div class="content">
+
+<img class="logo" src="sde-logo.jpg.jpg" alt="SDE Logo">
+
+<h1 class="claim">
+Designing environments for people, culture and change.
+</h1>
+
+<div class="text">
+
+<p>
+SDE is an international design studio based in Berlin.
+</p>
+
+<p>
+We create buildings, pavilions, workplaces and cultural environments that connect architecture, technology and human experience.
+</p>
+
+<p>
+We believe that meaningful design emerges when people, nature, culture and technology are considered as part of one interconnected environment.
+</p>
+
+<p>
+Our work spans architecture, exhibitions, workplaces and destinations across Europe, the Middle East, Asia and beyond.
+</p>
+
+</div>
+
+<div class="contact">
+For project inquiries:
+<a href="mailto:info@studio-de.com">info@studio-de.com</a>
+</div>
+
+</div>
+
+</main>
+
 </body>
 </html>
